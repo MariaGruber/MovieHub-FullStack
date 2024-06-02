@@ -1,6 +1,9 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import Header from "@/components/header/header"
+import Footer from "@/components/footer/footer"
 import "./globals.css";
+import { Toaster } from "react-hot-toast"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
+      <Toaster/>
+          <Header />
+            <main className="flex-grow p-4 md:p-6">
+              {children}
+            </main>
+              <Footer />
+      </body>
     </html>
   );
 }
