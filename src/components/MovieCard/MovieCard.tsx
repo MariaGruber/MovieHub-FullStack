@@ -21,7 +21,7 @@ function MovieCard({ movies }: { movies: Movies }) {
                 alt={movies?.name}
                 width={1920}
                 height={1080}
-                key={movies?.id}
+                key={movies?._id}
             />
         </div>
     )

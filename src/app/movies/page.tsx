@@ -2,10 +2,7 @@ import MovieCarousel from "@/components/movieCarousel/MovieCarousel"
 import { getMovies } from "@/lib/data"
 import Link from "next/link"
 
-
-
 export default async function Movies() {
-
 
   const movies = await getMovies();
   console.log(movies)
