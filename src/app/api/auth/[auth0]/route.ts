@@ -10,4 +10,7 @@ export const GET = handleAuth({
       },
       returnTo: "/movies",
     }),
+    logout: handleLogin({
+        returnTo: "/",
+      }),
   });
