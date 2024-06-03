@@ -1,5 +1,5 @@
 "use client"
-import { useUser } from "@auth0/nextjs-auth0/client";
+/*import { useUser } from "@auth0/nextjs-auth0/client";
 
 
 
@@ -13,10 +13,12 @@ export default function User() {
   if (error) {
     return <div>this could not be charged</div>;
   }
+
+
   console.log(user)
   return (
     <main>
-   <p>khgkjdfhskgjdfhgkjdfghkdfsjghdfkjg</p>
+   <p></p>
    
    {user && (
         <div>
@@ -27,4 +29,4 @@ export default function User() {
       )}
     </main>
   );
-}
+}*/

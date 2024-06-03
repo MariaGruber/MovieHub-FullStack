@@ -8,7 +8,7 @@ const CreateMovie: React.FC = () => {
   const initialFormState = {
     name: '',
     score: '',
-    genre: '6617677a9e10d610f61df287',
+    genre: 'Action',
     synopsis: '',
     image: null as File | null
   }
